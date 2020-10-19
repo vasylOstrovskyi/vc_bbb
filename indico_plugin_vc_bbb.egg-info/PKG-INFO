@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: indico-plugin-vc-bbb
+Version: 1.0
+Summary: BigBlueButton video-conferencing plugin for Indico
+Home-page: https://github.com/indico/indico-plugins
+Author: Indico Team
+Author-email: indico-team@cern.ch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7

@@ -1,0 +1,31 @@
+{% extends 'vc/event_buttons.html' %}
+{% from 'vc_bbb:buttons.html' import render_join_button, render_start_join_button   %}
+
+{% block buttons %}
+    {% if is_running  %}
+	{{ render_join_button(event_vc_room, "i-button icon-play event-service-right-button join-button") }}
+    {% else %}
+	{% if ended %}
+	    <span class="i-button event-service-right-button icon-disable">
+    	    {% trans %}Meeting ended{% endtrans %}
+    	    </span>
+    	{% else %}
+	    {% if is_moderator %}
+    		{{ render_start_join_button(event_vc_room, "i-button icon-play event-service-right-button join-button") }}
+    	    {% else %}
+		<span class="i-button event-service-right-button icon-disable">
+    		{% trans %}Meeting not started{% endtrans %}
+		</span>
+    	    {% endif %}
+	{% endif %}
+    {% endif %}
+    {% if recorded %}
+	<a href="#" class="i-button event-service-right-button icon-file-video action-show-recordings" 
+		data-href="{{ url_for_plugin('vc_bbb.view_recordings', event_vc_room) }}" 
+		data-title="{% trans %}Event recordings{% endtrans %}"
+		data-ajax-dialog 
+		data-reload-after>
+    		{% trans %}Recordings{% endtrans %}
+	</a>
+    {% endif %}
+{% endblock %}

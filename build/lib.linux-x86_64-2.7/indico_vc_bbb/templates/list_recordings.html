@@ -1,0 +1,23 @@
+{% extends 'events/management/base.html' if linked_object_type == 'event' else 'layout/base.html' %}
+
+{% block content %}
+<table class="details-container">
+    <tr>
+    <th>{% trans %}Date{% endtrans %}</th>
+    <th>{% trans %}Time{% endtrans %}</th>
+    <th>{% trans %}Users{% endtrans %}</th>
+    <th>{% trans %}Preview{% endtrans %}</th>
+    <th>{% trans %}Link{% endtrans %}</th>
+    </tr>
+    {% for rec in recordings %}
+	<tr><td>{{ rec.start_date }} - {{ rec.end_date }}</td><td>{{ rec.length }}</td> <td>{{ rec.participants }}</td>
+	<td>
+	{% for image in rec.previews %}
+	<img src="{{ image.src}}" width="auto" height="60px"></img>
+	{% endfor %}
+	</td>
+	    <td><a href="{{ rec.url }}" class="i-button icon-play" target="_blank"></a><td>
+	</tr>
+    {% endfor %}
+</table>
+{% endblock %}

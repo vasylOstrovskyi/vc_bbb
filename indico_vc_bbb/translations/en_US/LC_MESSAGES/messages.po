@@ -1,0 +1,281 @@
+# English (United States) translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-09-03 19:43+0300\n"
+"PO-Revision-Date: 2020-10-19 18:44+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en_US\n"
+"Language-Team: en_US <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: indico_vc_bbb/controllers.py:68
+msgid "Cannot create room"
+msgstr ""
+
+#: indico_vc_bbb/controllers.py:76 indico_vc_bbb/controllers.py:117
+msgid "You are not allowed to modify {} rooms for this event."
+msgstr ""
+
+#: indico_vc_bbb/controllers.py:95
+msgid "File too large"
+msgstr ""
+
+#: indico_vc_bbb/controllers.py:104
+msgid "Slides uploaded"
+msgstr ""
+
+#: indico_vc_bbb/controllers.py:109
+msgid "No files uploaded"
+msgstr ""
+
+#: indico_vc_bbb/controllers.py:125
+msgid "Slides deleted"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:27
+msgid "BBB server URL"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:28
+msgid "E.g., https://bbb.yourdomain.tld"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:29
+msgid "API endpoint"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:30
+msgid "E.g., https://bbb.yourdomain.tld/bigbluebutton"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:31
+msgid "BBB Secret"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:32
+msgid "BigBlueButton api key"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:36
+msgid "Welcome message"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:36
+#, python-format
+msgid ""
+"You can include keywords (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) which "
+"will be substituted automatically."
+msgstr ""
+
+#: indico_vc_bbb/forms.py:38
+msgid "Record"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:40
+msgid "Enable recordings (disable if need privacy)"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:42
+msgid "Start recordings"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:44
+msgid "Start session recording automatically"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:46
+msgid "Recording control"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:48
+msgid "Enable moderator to start and pause recording"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:50
+msgid "Webcams to moderator only"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:52
+msgid "Show webcams to moderator only"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:54
+msgid "Mute on start"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:56
+msgid "Mute all users on session start"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:58
+msgid "Allow unmute"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:60
+msgid "Allow moderators to unmute users"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:62
+msgid "Lock disable cameras"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:64
+msgid "Prevent users from sharing their webcams"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:66
+msgid "Lock disable microphones"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:68
+msgid "Force users to join listen only"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:70
+msgid "Lock disable private chats"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:72
+msgid "Disable private chats in the meeting"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:74
+msgid "Lock disable public chat"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:76
+msgid "Disable public chat in the meeting"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:78
+msgid "Lock disable notes"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:80
+msgid "Disable notes in the meeting"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:82
+msgid "Lock layout"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:84
+msgid "Lock layout in the meeting"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:86
+msgid "Guest policy"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:87
+msgid "Accept"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:87
+msgid "Deny"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:87
+msgid "Ask moderator"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:107 indico_vc_bbb/forms.py:125
+#: indico_vc_bbb/templates/info_box.html:2
+#: indico_vc_bbb/templates/manage_event_info_box.html:4
+msgid "Moderators"
+msgstr ""
+
+#: indico_vc_bbb/forms.py:151
+msgid "slides"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:4
+msgid "Join"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:11
+#: indico_vc_bbb/templates/buttons.html:18
+msgid "Start"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:24
+#: indico_vc_bbb/templates/buttons.html:26
+msgid "Manage presentations"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:35
+msgid "End"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:41
+msgid "Manage recordings"
+msgstr ""
+
+#: indico_vc_bbb/templates/buttons.html:43
+msgid "Manage event recordings"
+msgstr ""
+
+#: indico_vc_bbb/templates/event_buttons.html:9
+msgid "Closed. Meeting ended"
+msgstr ""
+
+#: indico_vc_bbb/templates/event_buttons.html:14
+msgid "Closed. Meeting not started"
+msgstr ""
+
+#: indico_vc_bbb/templates/info_box.html:5
+msgid "Status"
+msgstr ""
+
+#: indico_vc_bbb/templates/info_box.html:8
+#: indico_vc_bbb/templates/info_box.html:18
+#: indico_vc_bbb/templates/info_box.html:29
+msgid "Start date"
+msgstr ""
+
+#: indico_vc_bbb/templates/info_box.html:10
+#: indico_vc_bbb/templates/info_box.html:20
+#: indico_vc_bbb/templates/info_box.html:31
+msgid "Duration"
+msgstr ""
+
+#: indico_vc_bbb/templates/info_box.html:12
+#: indico_vc_bbb/templates/info_box.html:22
+#: indico_vc_bbb/templates/info_box.html:33
+msgid "End date"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:2
+msgid "Room ID"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:6
+msgid "Presentation"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:8
+msgid "Recoding enabled"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_event_preload_slides.html:7
+msgid "Upload"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_event_preload_slides.html:11
+msgid "Delete"
+msgstr ""
+
+#: indico_vc_bbb/templates/manage_recordings.html:2
+msgid "Recordings"
+msgstr ""
+

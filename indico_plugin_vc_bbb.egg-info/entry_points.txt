@@ -1,0 +1,3 @@
+[indico.plugins]
+vc_bbb = indico_vc_bbb.plugin:BigBlueButtonPlugin
+

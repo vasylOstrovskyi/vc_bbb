@@ -1,0 +1,308 @@
+# Ukrainian (Ukraine) translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Vasyl Ostrovskyi <vo@imath.kiev.ua>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-10-19 18:46+0300\n"
+"PO-Revision-Date: 2020-10-19 19:39+0300\n"
+"Last-Translator: Vasyl Ostrovskyi <vo@imath.kiev.ua>\n"
+"Language: uk\n"
+"Language-Team: Ukrainian <vo@imath.kiev.ua>\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Gtranslator 3.34.0\n"
+
+#: indico_vc_bbb/controllers.py:82
+msgid "Cannot create room"
+msgstr "Неможливо створити кімнату"
+
+#: indico_vc_bbb/controllers.py:90 indico_vc_bbb/controllers.py:145
+msgid "You are not allowed to modify {} rooms for this event."
+msgstr "Вам не дозволено змінювати {} кімнати для цієї події."
+
+#: indico_vc_bbb/controllers.py:128
+msgid "File too large"
+msgstr "Файл надто великий"
+
+#: indico_vc_bbb/controllers.py:135
+msgid "File list updated"
+msgstr "Перелік файлів оновлено"
+
+#: indico_vc_bbb/controllers.py:158
+msgid "Recording deleted"
+msgstr "Запис видалено"
+
+#: indico_vc_bbb/controllers.py:160
+msgid "Recording not deleted"
+msgstr "Запис не видалено"
+
+#: indico_vc_bbb/forms.py:27
+msgid "API endpoint"
+msgstr "Базова адреса API"
+
+#: indico_vc_bbb/forms.py:28
+msgid ""
+"URL returned by \"bbb-conf --secret\", E.g., https://bbb.yourdomain.tld/"
+"bigbluebutton/"
+msgstr ""
+"URL, що повідомляє команда \"bbb-conf --secret\", наприклад, https://bbb."
+"yourdomain.tld/bigbluebutton/"
+
+#: indico_vc_bbb/forms.py:29
+msgid "BBB Secret"
+msgstr "Секретний код BBB"
+
+#: indico_vc_bbb/forms.py:30
+msgid "Secret returned by \"bbb-conf --secret\""
+msgstr "Код, що повідомляє команда \"bbb-conf --secret\""
+
+#: indico_vc_bbb/forms.py:34
+msgid "Welcome message"
+msgstr "Вітальне повідомлення"
+
+#: indico_vc_bbb/forms.py:34
+#, python-format
+msgid ""
+"You can include keywords (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) which will "
+"be substituted automatically."
+msgstr ""
+
+#: indico_vc_bbb/forms.py:36
+msgid "Record"
+msgstr "Запис"
+
+#: indico_vc_bbb/forms.py:38
+msgid "Enable recordings (disable if need privacy)"
+msgstr "Дозволити запис (вимкніть, якщо потрібна приватність)"
+
+#: indico_vc_bbb/forms.py:40
+msgid "Start recordings"
+msgstr "Починати запис"
+
+#: indico_vc_bbb/forms.py:42
+msgid "Start session recording automatically"
+msgstr "Автоматично вмикати запис сеансу"
+
+#: indico_vc_bbb/forms.py:44
+msgid "Recording control"
+msgstr "Керування записом"
+
+#: indico_vc_bbb/forms.py:46
+msgid "Enable moderator to start and pause recording"
+msgstr "Дозволити модератору починати та зупиняти запис"
+
+#: indico_vc_bbb/forms.py:48
+msgid "Webcams to moderator only"
+msgstr "Вебкамери лише модератору"
+
+#: indico_vc_bbb/forms.py:50
+msgid "Show webcams to moderator only"
+msgstr "Показувати зображення з вебкамер учасників лише модератору"
+
+#: indico_vc_bbb/forms.py:52
+msgid "Mute on start"
+msgstr "Вимкнути звук при вході"
+
+#: indico_vc_bbb/forms.py:54
+msgid "Mute all users on session start"
+msgstr "Вимкнути мікрофони користувачів на початку сеансу"
+
+#: indico_vc_bbb/forms.py:56
+msgid "Allow unmute"
+msgstr "Дозволити вмикати звук"
+
+#: indico_vc_bbb/forms.py:58
+msgid "Allow moderators to unmute users"
+msgstr "Дозволити модераторам вмикати звук іншим користувачам"
+
+#: indico_vc_bbb/forms.py:60
+msgid "Lock disable cameras"
+msgstr "Заблокувати камери"
+
+#: indico_vc_bbb/forms.py:62
+msgid "Prevent users from sharing their webcams"
+msgstr "Унеможливити вмикання камер користувачів"
+
+#: indico_vc_bbb/forms.py:64
+msgid "Lock disable microphones"
+msgstr "Заблокувати мікрофони"
+
+#: indico_vc_bbb/forms.py:66
+msgid "Force users to join listen only"
+msgstr "Примусово приєднувати користувачів лише для слухання"
+
+#: indico_vc_bbb/forms.py:68
+msgid "Lock disable private chats"
+msgstr "Заблокувати приватні повідомлення"
+
+#: indico_vc_bbb/forms.py:70
+msgid "Disable private chats in the meeting"
+msgstr "Вимкнути можливість надсилання приватних повідомлень"
+
+#: indico_vc_bbb/forms.py:72
+msgid "Lock disable public chat"
+msgstr "Заблокувати загальний чат"
+
+#: indico_vc_bbb/forms.py:74
+msgid "Disable public chat in the meeting"
+msgstr "Вимкнути можливість обміну повідомленнями"
+
+#: indico_vc_bbb/forms.py:76
+msgid "Lock disable notes"
+msgstr "Заблокувати спільні нотатки"
+
+#: indico_vc_bbb/forms.py:78
+msgid "Disable notes in the meeting"
+msgstr "Вимкнути можливість користування спільними нотатками"
+
+#: indico_vc_bbb/forms.py:80
+msgid "Lock layout"
+msgstr "Заблокувати зовнішній вигляд"
+
+#: indico_vc_bbb/forms.py:82
+msgid "Lock layout in the meeting"
+msgstr ""
+"Вимкнути можливість змінювати розміщення елементів сторінки під час зустрічі"
+
+#: indico_vc_bbb/forms.py:84
+msgid "Guest policy"
+msgstr "Політика щодо гостей"
+
+#: indico_vc_bbb/forms.py:85
+msgid "Accept"
+msgstr "Приймати"
+
+#: indico_vc_bbb/forms.py:85
+msgid "Deny"
+msgstr "Відхиляти"
+
+#: indico_vc_bbb/forms.py:85
+msgid "Ask moderator"
+msgstr "Питати модератора"
+
+#: indico_vc_bbb/forms.py:105 indico_vc_bbb/forms.py:123
+#: indico_vc_bbb/templates/info_box.html:2
+#: indico_vc_bbb/templates/manage_event_info_box.html:2
+msgid "Moderators"
+msgstr "Модератори"
+
+#: indico_vc_bbb/forms.py:141
+msgid "slides"
+msgstr "Слайди"
+
+#: indico_vc_bbb/templates/buttons.html:4
+msgid "Join"
+msgstr "Приєднатись"
+
+#: indico_vc_bbb/templates/buttons.html:11
+msgid "Start"
+msgstr "Розпочати"
+
+#: indico_vc_bbb/templates/buttons.html:17
+#: indico_vc_bbb/templates/buttons.html:19
+msgid "Manage presentations"
+msgstr "Керування презентаціями"
+
+#: indico_vc_bbb/templates/buttons.html:27
+msgid "Manage recordings"
+msgstr "Керування записами"
+
+#: indico_vc_bbb/templates/buttons.html:29
+msgid "Manage event recordings"
+msgstr "Керування записами зустрічі"
+
+#: indico_vc_bbb/templates/event_buttons.html:10
+msgid "Meeting ended"
+msgstr "Зустріч закінчилась"
+
+#: indico_vc_bbb/templates/event_buttons.html:17
+msgid "Meeting not started"
+msgstr "Зустріч ще не почалась"
+
+#: indico_vc_bbb/templates/event_buttons.html:25
+msgid "Event recordings"
+msgstr "Записи події"
+
+#: indico_vc_bbb/templates/event_buttons.html:28
+#: indico_vc_bbb/templates/manage_recordings.html:8
+msgid "Recordings"
+msgstr "Записи"
+
+#: indico_vc_bbb/templates/info_box.html:5
+msgid "Status"
+msgstr "Статус"
+
+#: indico_vc_bbb/templates/info_box.html:8
+#: indico_vc_bbb/templates/info_box.html:18
+#: indico_vc_bbb/templates/info_box.html:29
+msgid "Start date"
+msgstr "Дата початку"
+
+#: indico_vc_bbb/templates/info_box.html:10
+#: indico_vc_bbb/templates/info_box.html:20
+#: indico_vc_bbb/templates/info_box.html:31
+msgid "Duration"
+msgstr "Тривалість"
+
+#: indico_vc_bbb/templates/info_box.html:12
+#: indico_vc_bbb/templates/info_box.html:22
+#: indico_vc_bbb/templates/info_box.html:33
+msgid "End date"
+msgstr "Дата закінчення"
+
+#: indico_vc_bbb/templates/list_recordings.html:6
+msgid "Date"
+msgstr "Дата"
+
+#: indico_vc_bbb/templates/list_recordings.html:7
+msgid "Time"
+msgstr "Тривалість"
+
+#: indico_vc_bbb/templates/list_recordings.html:8
+msgid "Users"
+msgstr "Користувачі"
+
+#: indico_vc_bbb/templates/list_recordings.html:9
+msgid "Preview"
+msgstr "Мініатюри"
+
+#: indico_vc_bbb/templates/list_recordings.html:10
+msgid "Link"
+msgstr "Посилання"
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:4
+msgid "Presentation"
+msgstr "Презентація"
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:8
+msgid "bytes"
+msgstr "байтів"
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:12
+msgid "No files"
+msgstr "Немає файлів"
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:14
+msgid "Room ID"
+msgstr "Ідентифікатор кімнати"
+
+#: indico_vc_bbb/templates/manage_event_info_box.html:16
+msgid "Internal ID"
+msgstr "Внутрішні ідентифікатори"
+
+#: indico_vc_bbb/templates/manage_event_preload_slides.html:7
+msgid "Update"
+msgstr "Поновити"
+
+#: indico_vc_bbb/templates/manage_recordings.html:21
+msgid "No recordings for this meeting"
+msgstr "Для цієї зустрічі немає записів"

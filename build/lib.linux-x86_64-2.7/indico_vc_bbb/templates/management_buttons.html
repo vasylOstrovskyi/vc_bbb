@@ -1,0 +1,7 @@
+{% extends 'vc/management_buttons.html' %}
+{% from 'vc_bbb:buttons.html' import render_start_button, render_end_button, render_preload_button, render_recordings_button %}
+
+{% block buttons %}
+    {{ render_preload_button(event_vc_room) }}
+    {{ render_recordings_button(event_vc_room, extra_classes = '') }}
+{% endblock %}
