@@ -54,8 +54,8 @@ def get_create_meeting_url(vc_room, event_vc_room):
     event_room_params += '&lockSettingsLockOnJoinConfigurable=' + 'true'
     event_room_params += '&lockSettingsLockOnJoin=' + 'true'
     event_room_params += '&guestPolicy=' + quote_plus(event_vc_room.data['guest_policy'])
-    event_room_params += '&bannerText=' + quote_plus('Big Brother is watching!!!')
-    event_room_params += '&bannerColor=' + quote_plus('#FF0000')
+#    event_room_params += '&bannerText=' + quote_plus('Big Brother is watching!!!')
+#    event_room_params += '&bannerColor=' + quote_plus('#FF0000')
 
     request_data = room_params + event_room_params
     return get_url(command, request_data)
