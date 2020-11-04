@@ -12,7 +12,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='indico-plugin-vc-bbb',
-    version='1.1',
+    version='1.2',
     description='BigBlueButton video-conferencing plugin for Indico',
     url='https://github.com/indico/indico-plugins',
     license='MIT',
@@ -22,7 +22,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     install_requires=[
-        'indico>=2.3'
+        'indico>=2.2.8'
     ],
     classifiers=[
         'Environment :: Plugins',
