@@ -96,7 +96,7 @@ class BigBlueButtonPlugin(VCPluginMixin, IndicoPlugin):
 
     def update_data_association(self, event, vc_room, event_vc_room, data):
         super(BigBlueButtonPlugin, self).update_data_association(event, vc_room, event_vc_room, data)
-        event_vc_room.data.update(self.get_vc_room_form_defaults(event))
+#        event_vc_room.data.update(self.get_vc_room_form_defaults(event))
         event_vc_room.data.update({key: data.pop(key) for key in list(set(data.keys()) & {
             'moderators',
 	    'record',

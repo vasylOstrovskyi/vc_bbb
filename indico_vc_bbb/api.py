@@ -28,7 +28,7 @@ def get_create_meeting_url(vc_room, event_vc_room):
     command = 'create'
     
     room_params = ''
-    room_params +=  'name=' + quote_plus(vc_room.name) 
+    room_params +=  'name=' + quote_plus(vc_room.name.encode('utf-8')) 
     room_params += '&meetingID=' + quote_plus(vc_room.data['room_id']) 
     room_params += '&moderatorPW=' + quote_plus(vc_room.data['moderator_password']) 
     room_params += '&attendeePW=' +  quote_plus(vc_room.data['attendee_password']) 
@@ -37,7 +37,7 @@ def get_create_meeting_url(vc_room, event_vc_room):
     event_room_params = ''
     
     if event_vc_room.data['welcome']:
-	event_room_params += '&welcome=' + quote_plus(event_vc_room.data['welcome'])
+	event_room_params += '&welcome=' + quote_plus(event_vc_room.data['welcome'].encode('utf-8'))
 
     event_room_params += '&record=' + str(event_vc_room.data['record']).lower() 
     event_room_params += '&autoStartRecording=' + str(event_vc_room.data['auto_start_recording']).lower()
@@ -65,7 +65,7 @@ def get_join_url(vc_room, is_moderator):
     if is_moderator:
 	password = vc_room.data['moderator_password']
     command = 'join'
-    params = 'fullName=' + quote_plus(session.user.name)
+    params = 'fullName=' + quote_plus(session.user.name.encode('utf-8'))
     params = params + '&meetingID=' + quote_plus(vc_room.data['room_id'])
     params = params + '&password=' + quote_plus(password)
     return get_url(command, params)
