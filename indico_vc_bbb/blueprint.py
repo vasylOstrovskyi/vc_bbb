@@ -5,7 +5,6 @@
 # them and/or modify them under the terms of the MIT License;
 # see the LICENSE file for more details.
 
-from __future__ import unicode_literals
 
 from indico.core.plugins import IndicoPluginBlueprint
 
@@ -14,12 +13,12 @@ from indico_vc_bbb.controllers import RHStartAndJoin, RHVCManageEventSlides, RHV
 
 blueprint = IndicoPluginBlueprint('vc_bbb', 'indico_vc_bbb')
 
-blueprint.add_url_rule('/event/<confId>/videoconference/<service>/<int:event_vc_room_id>/start',
+blueprint.add_url_rule('/event/<int:event_id>/videoconference/<any(bbb):service>/<int:event_vc_room_id>/start',
                        'start_and_join', RHStartAndJoin, methods=('POST', 'GET'))
-blueprint.add_url_rule('/event/<confId>/manage/videoconference/<service>/<int:event_vc_room_id>/slides',
+blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/slides',
                        'slides', RHVCManageEventSlides, methods=('POST', 'GET'))
-blueprint.add_url_rule('/event/<confId>/manage/videoconference/<service>/<int:event_vc_room_id>/recordings',
+blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/recordings',
                        'recordings', RHVCManageEventRecordings)
-blueprint.add_url_rule('/event/<confId>/manage/videoconference/<service>/<int:event_vc_room_id>/view_recordings',
+blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/view_recordings',
                        'view_recordings', RHVCViewEventRecordings)
 

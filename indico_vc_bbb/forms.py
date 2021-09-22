@@ -5,7 +5,6 @@
 # them and/or modify them under the terms of the MIT License;
 # see the LICENSE file for more details.
 
-from __future__ import unicode_literals
 from flask import session
 
 from wtforms.fields.core import BooleanField, SelectField
@@ -34,11 +33,11 @@ class BBBAdvancedFormMixin(object):
     welcome = TextAreaField(_('Welcome message'), description=_('You can include keywords (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) which will be substituted automatically.'))
 
     record = BooleanField(_('Record'),
-                        	widget=SwitchWidget(),
-                        	description=_("Enable recordings (disable if need privacy)"))
+                                widget=SwitchWidget(),
+                                description=_("Enable recordings (disable if need privacy)"))
 
     auto_start_recording = BooleanField(_('Start recordings'),
-                    	    widget=SwitchWidget(),
+                            widget=SwitchWidget(),
                             description=_("Start session recording automatically"))
 
     allow_start_stop_recording = BooleanField(_('Recording control'),
@@ -86,36 +85,36 @@ class BBBAdvancedFormMixin(object):
 
 class VCRoomForm(VCRoomFormBase, BBBAdvancedFormMixin):
     advanced_fields = ['welcome', 
-			'record',
-                    	'auto_start_recording', 
-                	'allow_start_stop_recording', 
-			'mute_on_start', 
-			'allow_mods_to_unmute_users', 
-			'webcams_only_for_moderator', 
-			'lock_settings_disable_cam', 
-			'lock_settings_disable_mic', 
-			'lock_setiings_disable_private_chat', 
-			'lock_settings_disable_public_chat', 
-			'lock_settings_disable_note', 
-			'lock_settings_locked_layout', 
-			'guest_policy', 
-			'show']
+                        'record',
+                        'auto_start_recording', 
+                        'allow_start_stop_recording', 
+                        'mute_on_start', 
+                        'allow_mods_to_unmute_users', 
+                        'webcams_only_for_moderator', 
+                        'lock_settings_disable_cam', 
+                        'lock_settings_disable_mic', 
+                        'lock_setiings_disable_private_chat', 
+                        'lock_settings_disable_public_chat', 
+                        'lock_settings_disable_note', 
+                        'lock_settings_locked_layout', 
+                        'guest_policy', 
+                        'show']
     skip_fields = set(advanced_fields) | VCRoomFormBase.conditional_fields
 
     mod_users = PrincipalListField(_('Moderators'), [DataRequired()])
     
     @generated_data
     def moderators(self):
-	return list(mod_user.as_principal for mod_user in self.mod_users.data)
+        return list(mod_user.as_principal for mod_user in self.mod_users.data)
 
     def __init__(self, *args, **kwargs):
         defaults = kwargs['obj']
-     	if defaults.mod_users is None and defaults.moderators is not None:
-	    defaults.mod_users = set()
-	    for moderator in defaults.moderators:
-		defaults.mod_users.add(retrieve_principal(moderator))
-	if defaults.mod_users is None:
-	    defaults.mod_users = [session.user]
+        if defaults.mod_users is None and defaults.moderators is not None:
+            defaults.mod_users = set()
+            for moderator in defaults.moderators:
+                defaults.mod_users.add(retrieve_principal(moderator))
+        if defaults.mod_users is None:
+            defaults.mod_users = [session.user]
         super(VCRoomForm, self).__init__(*args, **kwargs)
 
 class VCRoomAttachForm(VCRoomAttachFormBase):
@@ -124,17 +123,17 @@ class VCRoomAttachForm(VCRoomAttachFormBase):
 
     @generated_data
     def moderators(self):
-	return list(mod_user.as_principal for mod_user in self.mod_users.data)
+        return list(mod_user.as_principal for mod_user in self.mod_users.data)
 
     def __init__(self, *args, **kwargs):
         defaults = kwargs['obj']
-        
-     	if defaults.mod_users is None and defaults.moderators is not None:
-	    defaults.mod_users = set()
-	    for moderator in defaults.moderators:
-		defaults.mod_users.add(retrieve_principal(moderator))
-	if defaults.mod_users is None:
-	    defaults.mod_users = [session.user]
+
+        if defaults.mod_users is None and defaults.moderators is not None:
+            defaults.mod_users = set()
+            for moderator in defaults.moderators:
+                defaults.mod_users.add(retrieve_principal(moderator))
+        if defaults.mod_users is None:
+            defaults.mod_users = [session.user]
         super(VCRoomAttachForm, self).__init__(*args, **kwargs)
 
 class VCRoomPreloadForm(IndicoForm):

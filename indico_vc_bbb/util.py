@@ -5,7 +5,6 @@
 # them and/or modify them under the terms of the MIT License;
 # see the LICENSE file for more details.
 
-from __future__ import unicode_literals
 
 #import re
 
@@ -22,7 +21,7 @@ def retrieve_principal(principal):
     if type_ in {'Avatar', 'User'}:
         return User.get(int(id_))
     else:
-        raise ValueError('Unexpected type: {}'.format(type_))
+        raise ValueError(f'Unexpected type: {type_}')
 
 def get_slides_metadata(file_):
     return {'id': file_['id'], 'filename': file_['filename'], 'size': file_['size'], 'content_type': 'pdf'}

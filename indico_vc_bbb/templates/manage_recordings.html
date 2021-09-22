@@ -1,4 +1,4 @@
-{% extends 'events/management/base.html' if linked_object_type == 'event' else 'layout/base.html' %}
+{% extends 'layout/base.html' %}
 
 
 
@@ -7,14 +7,14 @@
 <dl class="details-container">
     <dt>{% trans %}Recordings{% endtrans %}</dt>
     {% for rec in text %}
-	<dd> {{ rec.start_date }} - {{ rec.end_date }} 
-	    <a href="{{ rec.url }}" class="i-button icon-play" target="_blank"></a>
-	    <button class="i-button icon-remove action-remove-recording"
-			data-href="{{ url_for_plugin('vc_bbb.recordings', event_vc_room, id=rec.record_id) }}"
-			data-method="GET"
-			data-reload-after>
-	    </button>
-	</dd>
+        <dd> {{ rec.start_date }} - {{ rec.end_date }} 
+            <a href="{{ rec.url }}" class="i-button icon-play" target="_blank"></a>
+            <button class="i-button icon-remove action-remove-recording"
+                        data-href="{{ url_for_plugin('vc_bbb.recordings', event_vc_room, id=rec.record_id) }}"
+                        data-method="GET"
+                        data-reload-after>
+            </button>
+        </dd>
     {% endfor %}
 </dl>
 {% else %}
