@@ -1,6 +1,7 @@
 # vc_bbb
 
 BigBlueButton videoconferencing plugin for Indico.
+Fork of https://github.com/vasylOstrovskyi/vc_bbb
 
 Meanwhile, only basic functions are available. Check for updates or modify the code yourself to suit your needs.
 
@@ -8,32 +9,43 @@ To install and configure:
 
 1. Install and configure BigBlueButton (https://bigbluebutton.org/)
 
-2. Get plugin source
-git clone https://github.com/vasylOstrovskyi/vc_bbb.git
-
-3. Switch to indico user and activate evironment
+2. Switch to indico user and activate evironment
+```shell
 su - indico
 source ~/.venv/bin/activate
+```
+
+3. Get plugin source
+```shell
+git clone https://github.com/ub-msmy/vc_bbb.git
+```
 
 4. Compile and install plugin
+```shell
 cd vc_bbb
 python setup.py install
-cd
+```
 
 5. Enable plugin in the config file. In indico.conf, add or modify line
+```
 PLUGINS={'vc_bbb'}
+```
 (append 'vc_bbb' to the list if you have some plugins installed)
 
 6. Restart indico
+```shell
 touch ~/web/indico.wsgi
+```
 
 7. Open indico in your browser, and go to Administration->Plugins, click on BigBlueButton
 
 8. On your BigBlueButton server, issue
+```
 bbb-conf --secret
+```
 and copy values for URL and secret to the corresponding fields, click Save.
 
-9. Use it and report bugs.
+9. Use it and `report bugs`.
 
 How to use it.
 

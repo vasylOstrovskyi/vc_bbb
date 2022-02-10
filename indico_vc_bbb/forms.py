@@ -7,8 +7,8 @@
 
 from flask import session
 
-from wtforms.fields.core import BooleanField, SelectField
-from wtforms.fields.html5 import URLField
+from wtforms import BooleanField, SelectField
+from wtforms.fields import URLField
 from wtforms.fields.simple import StringField, TextAreaField
 from wtforms.validators import DataRequired
 
@@ -18,14 +18,14 @@ from indico.web.forms.widgets import SwitchWidget
 from indico.web.forms.base import IndicoForm, generated_data
 
 from indico.util.i18n import _
-from indico.web.forms.fields import PrincipalListField, EditableFileField
+from indico.web.forms.fields import PrincipalListField, EditableFileField, IndicoPasswordField
 
 from indico_vc_bbb.util import retrieve_principal, get_slides_metadata
 
 class PluginSettingsForm(VCPluginSettingsFormBase):
     bbb_api_link = URLField(_('API endpoint'), [DataRequired()],
                                 description=_('URL returned by "bbb-conf --secret", E.g., https://bbb.yourdomain.tld/bigbluebutton/'))
-    bbb_secret = StringField(_('BBB Secret'), [DataRequired()],
+    bbb_secret = IndicoPasswordField(_('BBB Secret'), [DataRequired()],
                                 description=_('Secret returned by "bbb-conf --secret"'))
 
 class BBBAdvancedFormMixin(object):
