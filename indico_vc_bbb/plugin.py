@@ -16,8 +16,8 @@ from flask_pluginengine import render_plugin_template
 
 from sqlalchemy.orm.attributes import flag_modified
 from wtforms.fields import IntegerField, TextAreaField
-from wtforms.fields.core import BooleanField, SelectField
-from wtforms.fields.html5 import EmailField, URLField
+from wtforms import BooleanField, SelectField
+from wtforms.fields import EmailField, URLField
 from wtforms.fields.simple import StringField, TextAreaField
 from wtforms.validators import DataRequired, NumberRange
 

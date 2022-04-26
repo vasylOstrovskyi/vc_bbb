@@ -60,7 +60,7 @@ class RHStartAndJoin(RHDisplayEventBase):
             for f in files:
                 xml += "<module name=\"presentation\"><document name=\"" + f['filename'] + "\">" + f['content'] + "</document></module>"
             xml += "</modules>"
-            r = requests.put(create_url, data=xml, headers={'Content-type': 'application/xml'})
+            r = requests.post(create_url, data=xml, headers={'Content-type': 'application/xml'})
         else:
             r = requests.get(create_url)
         root = ET.fromstring(r.content)
